@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!-- Styles -->
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' >
+    <title>Jason Chen</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700'
+          rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/modernizr-2.7.1.js"></script>
+</head>
+
+<body>
+<div id="mapholder">
+    <div id="map"></div>
+</div>
+<script>
+    function initMap() {
+        var styledMapType = new google.maps.StyledMapType(
+                [{"featureType":"all","elementType":"all","stylers":[{"lightness":"-2"},{"saturation":"-100"}]},{"featureType":"all","elementType":"geometry.fill","stylers":[{"saturation":"-100"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"lightness":"78"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"},{"saturation":"-100"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"-31"},{"saturation":"-100"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"81"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"0"},{"gamma":"1"},{"color":"#f7f7f7"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"56"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"lightness":"-100"},{"saturation":"-100"},{"gamma":"1"},{"weight":"1.00"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"weight":"0.25"},{"saturation":"-100"},{"lightness":"-100"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"50"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"lightness":"50"}]},{"featureType":"transit.station.rail","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"transit.station.rail","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"water","elementType":"geometry","stylers":[{"saturation":"-25"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]}]
+                ,{name: 'Styled Map'});
+
+        var home = {lat: 33.6839, lng: -117.7947};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 12,
+            center: home,
+        });
+        var marker = new google.maps.Marker({
+            position: home,
+            map: map
+        });
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+        map.mapTypes.set('styled_map', styledMapType);
+        map.setMapTypeId('styled_map');
+    }
+</script>
+
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="logo1 scroll" href="#header"><span style="letter-spacing:-6px;">JC</span></a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#apps" class="scroll">Applications</a></li>
+                <li><a href="#techSkills" class="scroll">Technical Skills</a></li>
+                <li><a href="#connect" class="scroll">Connect With Me</a></li>
+            </ul>
+        </div><!--/.navbar-collapse -->
+    </div>
+</div>
+
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <a href="#header" class="logo2 scroll"><span style="letter-spacing:-6px">JC</span></a>
+            </div>
+            <div class="col-xs-6 signin text-right navbar-nav ">
+                <a href="#apps" class="scroll header_bar">Applications</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#techSkills" class="scroll header_bar">Technical Skills</a>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="#connect" class="scroll header_bar">Connect With Me</a>
+            </div>
+        </div>
+
+        <div id="typed-strings">
+            <span class="typed_string">
+        </div>
+
+        <div class="row header-info">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+                <h1 class="frontpage_text wow fadeIn" style="color: #111;">Jason&nbsp;Chen</h1>
+                <br/>
+                <h2 class="frontpage_text wow fadeIn" style="color: #111" data-wow-delay="0.5s">&ltweb_developer&gt</h2>
+                <br/>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section id="apps">
+    <div class='black_back'>
+        <div class="container">
+            <h1 class="white technical_header">
+                Applications
+            </h1>
+            <div class="cube">
+                <div class="container2">
+                    <div id="cube" class="rotate cube_transform">
+                        <figure class="front cube_border" onclick="side_expand(1)">
+                            <div class="cube_font">
+                                iBet
+                            </div>
+                            <div class="video_container">
+                                <video class="cube_video" autoplay loop>
+                                    <source src="video/iBet.mp4" type="video/mp4"/>
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                        </figure>
+                        <figure class="right cube_border" onclick="side_expand(2)">
+                            <div class="cube_font">
+                                Moduulis.com
+                            </div>
+                            <div class="video_container">
+                                <video class="cube_video" autoplay loop>
+                                    <source src="video/moduulis.mp4" type="video/mp4"/>
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                        </figure>
+                        <figure class="back cube_border" onclick="side_expand(3)">
+                            <div class="cube_font">
+                                Tic-Tac-REMIX!
+                            </div>
+                            <div class="video_container">
+                                <video class="cube_video" autoplay loop>
+                                    <source src="video/testvid.mp4" type="video/mp4"/>
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                        </figure>
+                        <figure class="left cube_border" onclick="side_expand(4)"
+                                style="font-size: 30px; line-height: 56px;">
+                            <div class="cube_font">
+                                Student Grade Table
+                            </div>
+                            <div class="video_container">
+                                <video class="cube_video" autoplay loop>
+                                    <source src="video/sgt.mp4" type="video/mp4"/>
+                                    Your browser does not support HTML5 video.
+                                </video>
+                            </div>
+                        </figure>
+                        <!--<figure class="top" onclick="side_expand(5)">-->
+                        <!--nothing to see here-->
+                        <!--</figure>-->
+                        <!--<figure class="bottom" onclick="side_expand(6)">-->
+                        <!--also nothing to see here-->
+                        <!--</figure>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="col-md-3 wow fadeIn" data-wow-delay="0.3s">
+                <div class="info" onclick="cube_spin(1)">
+                    <div id="side1_sel" class="side">
+                        <h3>
+                            iBet
+                        </h3>
+                        <br>
+                    </div>
+                    <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci
+                        ut est
+                        facilisis, eu
+                        elementum mi volutpat. Pellentesque ac tristique nisi.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-3 wow fadeIn" data-wow-delay=".4s">
+                <div class="info" onclick="cube_spin(2)">
+                    <div id="side2_sel" class="side">
+                        <h3>
+                            moduulis.com
+                        </h3>
+                        <br>
+                    </div>
+                    <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci
+                        ut est
+                        facilisis, eu
+                        elementum mi volutpat. Pellentesque ac tristique nisi.</p>
+                </div>
+            </div>
+            <div class="col-md-3 wow fadeIn" data-wow-delay=".5s">
+                <div class="info" onclick="cube_spin(3)">
+                    <div id="side3_sel" class="side">
+                        <h3>
+                            tic-tac-remix
+                        </h3>
+                        <br>
+                    </div>
+                    <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci
+                        ut est
+                        facilisis, eu
+                        elementum mi volutpat. Pellentesque ac tristique nisi.</p>
+                </div>
+            </div>
+            <div class="col-md-3 wow fadeIn" data-wow-delay=".6s">
+                <div class="info" onclick="cube_spin(4)">
+                    <div id="side4_sel" class="side">
+                        <h3>
+                            Student Grade Table (CMS)
+                        </h3>
+                        <br>
+                    </div>
+                    <p style="color:black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam viverra orci
+                        ut
+                        est facilisis, eu
+                        elementum mi volutpat. Pellentesque ac tristique nisi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Pricing-->
+<section id="techSkills" class="pad-lg">
+    <h1 class="white technical_header">
+        Technical Skills
+    </h1>
+    <div class="row_conatiner">
+        <div class='column'>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#9E3D34 10px solid; background-color:#C4473A">
+                <div class="tech_text">Angular JS</div>
+                <img src="img/angularjs.png">
+            </div>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#D6BA32 10px solid; background-color:#FFDA3E">
+                <div class="tech_text">Javascript</div>
+                <img src="img/javascript.png">
+            </div>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#E44D26 10px solid; background-color:#F16529">
+                <div class="tech_text">HTML</div>
+                <img src="img/HTML5.png">
+            </div>
+        </div>
+        <div class="column">
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#0170BA 10px solid; background-color:#29A9DF">
+                <div class="tech_text">CSS</div>
+                <img src="img/css3.png">
+            </div>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#193556 10px solid; background-color:white">
+                <div class="tech_text">jQuery</div>
+                <img src="img/jquery.png">
+            </div>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#777BB4 10px solid; background-color:white">
+                <div class="tech_text">php</div>
+                <img src="img/php.png">
+            </div>
+        </div>
+        <div class="column">
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#5E2C4B 10px solid; background-color:white">
+                <div class="tech_text">Bootstrap</div>
+                <img src="img/bootstrap.png">
+            </div>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#464646 10px solid; background-color:white">
+                <div class="tech_text">WordPress</div>
+                <img src="img/wordpress.png">
+            </div>
+            <div class="skills_assist"></div>
+            <div class="skills" style="border:#FFCC2F 10px solid; background-color:#F5820B">
+                <div class="tech_text">Firebase</div>
+                <img src="img/firebase.png">
+            </div>
+        </div>
+    <!--</div>-->
+    <!--<div class="row_conatiner">-->
+    <!--</div>-->
+    <!--<div class="row_conatiner">-->
+    <!--</div>-->
+</section>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNFASzWuzOzvsMiZZIc6EYy2a6dJ2TnsI&callback=initMap">
+</script>
+<section id="connect" class="pad-lg light-gray-bg">
+
+    <div class="container">
+        <div class="row_conatiner">
+            <div id="contact_form" class="text-center">
+                <i class="fa fa-envelope-o margin-40"></i>
+                <h2 class="white contact">Contact me</h2>
+                <br/>
+
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <form role="form">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Enter Your Name"><br>
+                                <input type="email" class="form-control" placeholder="Enter Your Email"><br>
+                                <textarea rows='4' cols="25" type="text" class="form-control message_box"
+                                          placeholder="Enter Your Message"></textarea>
+                                <br>
+                            </div>
+                            <button type="submit" class="btn btn-lg send_btn"> &nbsp;&nbsp;&nbsp; Send &nbsp;&nbsp;&nbsp; </button>
+                        </form>
+                    </div>
+                </div><!--End Form row-->
+
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <ul class="list-inline social" style='min-height:40px; font-size:25px;margin-bottom: 0'>
+                    <li>Connect with me on:</li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+        </div>
+</footer>
+
+
+<!-- Javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+<script src="js/wow.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/typed.js" type="text/javascript"></script>
+<script src="script.js"></script>
+<script>
+    $(function () {
+        $(".typed_string").typed({
+            strings: ["<br><br><br><br>&lt;html&gt;<br>" +
+            "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;div id='Jason_Chen' class='Jedi_Knight' height='177cm " +
+            "'&gt; <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; " +
+            "Hi! I'm a web developer who is based out of Irvine Ca. <br> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;" +
+            " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; I enjoy problem solving, coding and...<br>" +
+            "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; long walks on the beach...<br>" +
+            "&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;/div&gt;<br>&lt;/html&gt;"],
+
+        });
+    });
+</script>
+</body>
+</html>
