@@ -456,6 +456,7 @@ footer {
     min-height: 88vh;
     height: 800px;
     overflow: hidden;
+    padding-top: 160px;
 }
 
 .techSkills_container {
@@ -828,6 +829,34 @@ footer {
     z-index: 5;
 }
 
+@media screen and (max-height: 770px) {
+    .front_header {
+        font-size: 35px;
+        line-height: 35px;
+        bottom: 20vh;
+        right: 20vw;
+    }
+
+    .front_header2 {
+        font-size: 25px;
+        line-height: 25px;
+        bottom: 15vh;
+        right: 15vw;
+
+    }
+
+    .typed-cursor {
+        font-size: 20px;
+        left: 5%;
+    }
+
+    .typed_string {
+        font-size: 20px;
+        left: 5%;
+    }
+}
+
+
 @media screen and (max-width: 1475px) {
     .front_header {
         font-size: 45px;
@@ -897,14 +926,14 @@ footer {
     .front_header {
         font-size: 35px;
         line-height: 35px;
-        bottom: 33vh;
+        bottom: 35vh;
         right: 10vw;
     }
 
     .front_header2 {
         font-size: 20px;
         line-height: 20px;
-        bottom: 28vh;
+        bottom: 30vh;
         right: 5vw;
     }
 
@@ -957,6 +986,14 @@ footer {
         font-size: 35px;
         line-height: 35px;
     }
+    .typed-cursor {
+        font-size: 10px;
+    }
+
+    .typed_string {
+        font-size: 10px;
+    }
+
 }
 
 @media screen and (max-width: 380px) {
@@ -976,16 +1013,8 @@ footer {
     }
 
     .technical_header, .front_header, .front_header2 {
-        font-size: 25px;
-        line-height: 25px;
-    }
-
-    .typed-cursor {
-        font-size: 10px;
-    }
-
-    .typed_string {
-        font-size: 10px;
+        font-size: 20px;
+        line-height: 20px;
     }
 
     .front_header {
@@ -1001,7 +1030,10 @@ footer {
         bottom: 28vh;
         right: 5vw;
     }
-
+    #connect {
+        min-height: 50vh;
+        padding-top: 30px;
+    }
 }
 
 .row_conatiner {
