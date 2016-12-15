@@ -277,14 +277,22 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-    background: url(../img/me_cartoon.png), rgba(255,255,255,1);
-    background-repeat: no-repeat;
-    background-position: 10% 100%;
-    background-size: 90vh;
-    width: 100%;
-    padding: 20px 10px 60px 10px;
+    background: url(../img/stars.png) #ffffff no-repeat center center fixed;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     height: 100vh;
     overflow: hidden;
+
+    /*background-repeat: no-repeat;*/
+    /*background-position: 10% 100%;*/
+    /*background-size: 90vh;*/
+    /*width: 100%;*/
+    /*padding: 20px 10px 60px 10px;*/
+    /*height: 100vh;*/
+    /*overflow: hidden;*/
 }
 
 .header-info {
@@ -357,7 +365,7 @@ header {
 }
 
 .pad-sm {
-    padding: 80px 0px;
+    padding: 100px 0px;
 }
 
 .pad-xs {
@@ -435,13 +443,26 @@ footer {
     color: #A42327;
 }
 
-/*---------------Pricing Tables-------------------*/
-
 #techSkills {
-    background: #111;
-    height: 110vh;
+    background: url(../img/stars3.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100vh;
     overflow: hidden;
 }
+
+#connect {
+    background: url(../img/stars2.png) no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 88vh;
+    overflow: hidden;
+}
+
 
 .techSkills_container {
     padding-left: 0px;
@@ -728,13 +749,14 @@ footer {
 .frontpage_text {
     position: relative;
     left: 55%;
+    bottom: 40%;
     width: 300px;
 }
 
 .typed_string {
     font-size: 25px;
     position: relative;
-    left: 40%;
+    left: 10%;
     font-weight: bold;
     z-index: 5;
 }
@@ -797,6 +819,38 @@ footer {
     margin-top:-6vh ;
 }
 
+.technical_header2 {
+    font-size: 35px;
+    line-height: 35px;
+    letter-spacing: -1px;
+    font-weight:700;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top:-6vh ;
+}
+
+.front_header, .front_header2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 65px;
+    line-height: 65px;
+    letter-spacing: -1px;
+    font-weight:700;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    bottom: 22vh;
+
+}
+
+.front_header2 {
+    font-size: 35px;
+    line-height: 35px;
+    bottom: 12vh;
+    right: 17vw;
+
+}
+
+
 @media screen and (max-width: 975px) {
     .skills {
         border-width: 5px;
@@ -831,6 +885,10 @@ footer {
         font-size: 45px;
         line-height: 45px;
     }
+}
+
+@media screen and (max-width: 1700px) {
+
 }
 
 
@@ -880,10 +938,15 @@ background-color: white;
 }
 
 #contact_form{
-    background-color: rgba(0,0,0,.7);
     padding: 20px;
     border-radius: 20px;
     border: black 4px solid;
+    background: url(../img/me_cartoon2.png) rgba(0,0,0,.7) no-repeat center center;
+    min-height: 300px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .send_btn{
@@ -926,7 +989,7 @@ background-color: white;
     -o-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
     position: relative;
-    left: 40%;
+    left: 10%;
 }
 
 @-keyframes blink {
