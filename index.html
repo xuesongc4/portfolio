@@ -406,15 +406,6 @@
                                     subject: $('input[name="subject"]').val(),
                                     body: $('textarea').val()
                                 };
-                                $('<div>').css({
-                                    'height': $('body').height(),
-                                    'width': $('body').width(),
-                                    'background-color': 'green',
-                                    'font-size': '50px',
-                                    'position': 'absolute',
-                                    'top': 0,
-                                    'left': 0
-                                }).text('YOUR MESSAGE IS SENDING').attr('id', 'send').appendTo($('body'));
                                 $.ajax({
                                     url: 'mail_handler.php',
                                     method: 'POST',
