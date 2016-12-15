@@ -824,9 +824,6 @@ footer {
     .skills:hover {
         font-size: 15px;
     }
-    .column{
-        margin-top: 30px;
-    }
     #techSkills {
         height: 100vh;
     }
@@ -846,14 +843,10 @@ footer {
     .skills:hover {
         font-size: 10px;
     }
-    .column{
-        margin-top: 75px;
-    }
     #techSkills {
         height: 100vh;
     }
     .technical_header{
-        margin-top: 25px;
         font-size: 35px;
         line-height: 35px;
     }
