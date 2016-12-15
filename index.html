@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <!-- Styles -->
-    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' >
+    <link rel='shortcut icon' href='favicon.ico' type='image/x-icon'>
     <title>Jason Chen</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -22,8 +22,100 @@
 <script>
     function initMap() {
         var styledMapType = new google.maps.StyledMapType(
-                [{"featureType":"all","elementType":"all","stylers":[{"lightness":"-2"},{"saturation":"-100"}]},{"featureType":"all","elementType":"geometry.fill","stylers":[{"saturation":"-100"}]},{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"lightness":"78"}]},{"featureType":"administrative.province","elementType":"all","stylers":[{"visibility":"off"},{"saturation":"-100"}]},{"featureType":"landscape","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"-31"},{"saturation":"-100"}]},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape.man_made","elementType":"all","stylers":[{"lightness":"81"}]},{"featureType":"landscape.natural","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"0"},{"gamma":"1"},{"color":"#f7f7f7"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"56"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"geometry.fill","stylers":[{"lightness":"-100"},{"saturation":"-100"},{"gamma":"1"},{"weight":"1.00"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"visibility":"on"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"visibility":"on"},{"weight":"0.25"},{"saturation":"-100"},{"lightness":"-100"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"on"},{"lightness":"50"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"lightness":"50"}]},{"featureType":"transit.station.rail","elementType":"geometry","stylers":[{"visibility":"on"}]},{"featureType":"transit.station.rail","elementType":"geometry.stroke","stylers":[{"visibility":"on"}]},{"featureType":"water","elementType":"all","stylers":[{"lightness":"100"}]},{"featureType":"water","elementType":"geometry","stylers":[{"saturation":"-25"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"off"}]}]
-                ,{name: 'Styled Map'});
+                [{
+                    "featureType": "all",
+                    "elementType": "all",
+                    "stylers": [{"lightness": "-2"}, {"saturation": "-100"}]
+                }, {
+                    "featureType": "all",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"saturation": "-100"}]
+                }, {
+                    "featureType": "all",
+                    "elementType": "labels",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "administrative",
+                    "elementType": "all",
+                    "stylers": [{"lightness": "78"}]
+                }, {
+                    "featureType": "administrative.province",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "off"}, {"saturation": "-100"}]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "on"}, {"lightness": "-31"}, {"saturation": "-100"}]
+                }, {
+                    "featureType": "landscape",
+                    "elementType": "labels",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "landscape.man_made",
+                    "elementType": "all",
+                    "stylers": [{"lightness": "81"}]
+                }, {
+                    "featureType": "landscape.natural",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "on"}, {"lightness": "0"}, {"gamma": "1"}, {"color": "#f7f7f7"}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "on"}, {"lightness": "56"}]
+                }, {
+                    "featureType": "poi",
+                    "elementType": "labels",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"lightness": "-100"}, {"saturation": "-100"}, {"gamma": "1"}, {"weight": "1.00"}]
+                }, {
+                    "featureType": "road",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "road",
+                    "elementType": "labels",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"visibility": "on"}]
+                }, {
+                    "featureType": "road.local",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"visibility": "on"}, {"weight": "0.25"}, {"saturation": "-100"}, {"lightness": "-100"}]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "all",
+                    "stylers": [{"visibility": "on"}, {"lightness": "50"}]
+                }, {
+                    "featureType": "transit",
+                    "elementType": "labels",
+                    "stylers": [{"visibility": "off"}]
+                }, {
+                    "featureType": "transit.station.airport",
+                    "elementType": "geometry.fill",
+                    "stylers": [{"lightness": "50"}]
+                }, {
+                    "featureType": "transit.station.rail",
+                    "elementType": "geometry",
+                    "stylers": [{"visibility": "on"}]
+                }, {
+                    "featureType": "transit.station.rail",
+                    "elementType": "geometry.stroke",
+                    "stylers": [{"visibility": "on"}]
+                }, {
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": [{"lightness": "100"}]
+                }, {
+                    "featureType": "water",
+                    "elementType": "geometry",
+                    "stylers": [{"saturation": "-25"}]
+                }, {"featureType": "water", "elementType": "labels", "stylers": [{"visibility": "off"}]}]
+                , {name: 'Styled Map'});
 
         var home = {lat: 33.6839, lng: -117.7947};
         var map = new google.maps.Map(document.getElementById('map'), {
@@ -92,7 +184,7 @@
 <section id="apps">
     <div class='black_back'>
         <div class="container">
-            <h1 class="white technical_header">
+            <h1 class="technical_header">
                 Applications
             </h1>
             <div class="cube wow fadeIn" data-wow-delay=".8s">
@@ -132,7 +224,7 @@
                             </div>
                         </figure>
                         <figure class="left cube_border" onclick="side_expand(4)"
-                                style="font-size: 30px; line-height: 56px;">
+                                style="font-size: 18px; line-height: 40px;">
                             <div class="cube_font">
                                 Student Grade Table
                             </div>
@@ -212,8 +304,10 @@
                         elementum mi volutpat. Pellentesque ac tristique nisi.</p>
                 </div>
             </div>
+                <div class="click_cube technical_header">
+                        Click on cube for more info.
+                </div>
         </div>
-    </div>
 </section>
 
 <!--Pricing-->
@@ -273,11 +367,11 @@
                 <img src="img/firebase.png">
             </div>
         </div>
-    <!--</div>-->
-    <!--<div class="row_conatiner">-->
-    <!--</div>-->
-    <!--<div class="row_conatiner">-->
-    <!--</div>-->
+        <!--</div>-->
+        <!--<div class="row_conatiner">-->
+        <!--</div>-->
+        <!--<div class="row_conatiner">-->
+        <!--</div>-->
 </section>
 
 <script async defer
