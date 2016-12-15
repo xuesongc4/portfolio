@@ -37,4 +37,5 @@ if(!$mail->send()) {
 } else {
     print_r ('Message has been sent');
 }
+header('Location: index.html');
 ?>
