@@ -585,6 +585,10 @@ footer {
     transform-style: preserve-3d;
 }
 
+.front:hover,.right:hover,.left:hover,.back:hover{
+    cursor: pointer;
+}
+
 #cube figure {
     margin: 0;
     width: 220px;
