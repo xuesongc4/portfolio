@@ -787,16 +787,31 @@ footer {
     width: 33%;
 }
 
+.technical_header {
+    font-size: 65px;
+    line-height: 65px;
+    letter-spacing: -1px;
+    font-weight:700;
+    text-align: center;
+    margin-bottom: 5vh;
+    margin-top:-6vh ;
+}
+
 @media screen and (max-width: 975px) {
     .skills {
         border-width: 5px;
         border-radius: 10px;
+        margin-top: 0px;
     }
     .skills:hover {
         font-size: 15px;
     }
     .column{
-        width: 30%;
+        width: 31%;
+    }
+    .technical_header{
+        font-size: 55px;
+        line-height: 55px;
     }
 }
 @media screen and (max-width: 750px) {
@@ -804,36 +819,43 @@ footer {
         height: 150px;
         border-width: 5px;
         border-radius: 10px;
+        margin-top: 0px;
     }
     .skills:hover {
         font-size: 15px;
     }
-    .skills > img {
-    }
     .column{
-        width: 30%;
+        margin-top: 30px;
     }
     #techSkills {
         height: 100vh;
     }
+    .technical_header{
+        font-size: 45px;
+        line-height: 45px;
+    }
 }
+
 
 @media screen and (max-width: 510px) {
     .skills {
         height: 125px;
-        border-width: 2px;
         border-radius: 5px;
+        margin-top: 0px;
     }
     .skills:hover {
         font-size: 10px;
     }
-    .skills > img {
-    }
     .column{
-        width: 30%;
+        margin-top: 75px;
     }
     #techSkills {
         height: 100vh;
+    }
+    .technical_header{
+        margin-top: 25px;
+        font-size: 35px;
+        line-height: 35px;
     }
 }
 
@@ -841,12 +863,6 @@ footer {
     margin: auto;
     max-width: 80%;
     max-height: 50%;
-}
-
-.technical_header {
-    text-align: center;
-    margin-bottom: 5vh;
-    margin-top:-6vh ;
 }
 
 #mapholder {
