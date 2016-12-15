@@ -255,7 +255,7 @@ a:hover, a:focus {
 }
 
 .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
-    border-color: #4ec3cd;
+    border-color: #A42327;
 }
 
 .navbar-inverse .navbar-toggle {
@@ -888,6 +888,17 @@ footer {
 }
 
 @media screen and (max-width: 1145px) {
+    .space{
+        display: none;
+    }
+    .text-right{
+        text-align: center;
+    }
+    a.scroll.header_bar{
+        font-size: 13px;
+        padding-top: 20px;
+        text-align: left;
+    }
     .front_header {
         font-size: 35px;
         line-height: 35px;
@@ -936,6 +947,18 @@ footer {
 }
 
 @media screen and (max-width: 750px) {
+    .logo2,.logo1{
+        font-size: 30px;
+    }
+    a.scroll.header_bar{
+        padding-top: 10px;
+    }
+    .signin{
+        padding-top:0px;
+    }
+    a.scroll{
+        text-align: right;
+    }
     .front_header {
         font-size: 35px;
         line-height: 35px;
@@ -1007,6 +1030,22 @@ footer {
         font-size: 10px;
     }
 
+}
+@media screen and (max-width: 615px) {
+    a.scroll.header_bar{
+        font-size: 9px;
+    }
+
+}
+
+@media screen and (max-width: 475px) {
+    a.scroll.header_bar{
+        padding-top: none;
+        font-size: 7px;
+    }
+    .navbar-nav{
+        margin:0;
+    }
 }
 
 @media screen and (max-width: 380px) {
