@@ -847,6 +847,7 @@ footer {
         height: 100vh;
     }
     .technical_header{
+        margin-top: -25px;
         font-size: 35px;
         line-height: 35px;
     }
