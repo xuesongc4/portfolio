@@ -835,6 +835,7 @@ footer {
 
 
 @media screen and (max-width: 510px) {
+
     .skills {
         height: 125px;
         border-radius: 5px;
@@ -847,7 +848,6 @@ footer {
         height: 100vh;
     }
     .technical_header{
-        margin-top: -25px;
         font-size: 35px;
         line-height: 35px;
     }
