@@ -278,7 +278,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-    background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;
+    background: url(../img/stars.png) #ffffff no-repeat center bottom;
     -webkit-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
     -moz-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
     -ms-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
@@ -368,7 +368,7 @@ header {
 }
 
 #apps {
-    background: url(../img/galaxy3.jpg) no-repeat center bottom fixed;
+    background: url(../img/galaxy3.jpg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
