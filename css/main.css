@@ -1034,10 +1034,12 @@ footer {
     }
 
     #apps {
-        background: url(../img/galaxy3.jpg) no-repeat center bottom;
+        background: url(../img/galaxy3.jpg)no-repeat center bottom;
+        background-size: cover;
     }
-    #techSkills {
-        background: url(../img/stars3.png) no-repeat center bottom;
+    header {
+        background: url(../img/stars.png) #ffffff no-repeat center bottom;
+        background-size: cover;
     }
 
 }
