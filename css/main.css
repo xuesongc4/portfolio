@@ -278,7 +278,7 @@ a:hover, a:focus {
    Main styles
    ========================================================================== */
 header {
-    background: url(../img/stars.png) #ffffff no-repeat center center fixed;
+    background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;
     min-height: 300px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -365,7 +365,7 @@ header {
 }
 
 #apps {
-    background: url(../img/galaxy3.jpg) no-repeat center center fixed;
+    background: url(../img/galaxy3.jpg) no-repeat center bottom fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -1041,10 +1041,6 @@ footer {
 @media screen and (max-width: 475px) {
     a.scroll.header_bar{
         padding-top: none;
-        font-size: 7px;
-    }
-    .navbar-nav{
-        margin:0;
     }
 }
 
