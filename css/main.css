@@ -976,6 +976,7 @@ footer {
     }
 }
 
+
 @media screen and (max-width: 750px) {
     .logo2,.logo1{
         font-size: 30px;
@@ -1030,6 +1031,14 @@ footer {
         font-size: 45px;
         line-height: 45px;
     }
+    #apps {
+        background: url(../img/galaxy3.jpg)no-repeat center bottom;
+        background-size: cover;
+    }
+    header {
+        background: url(../img/stars.png) #ffffff no-repeat center bottom;
+        background-size: cover;
+    }
 }
 
 @media screen and (max-width: 510px) {
@@ -1060,19 +1069,13 @@ footer {
         font-size: 10px;
     }
 
-    #apps {
-        background: url(../img/galaxy3.jpg)no-repeat center bottom;
-        background-size: cover;
-    }
-    header {
-        background: url(../img/stars.png) #ffffff no-repeat center bottom;
-        background-size: cover;
-    }
-
 }
 @media screen and (max-width: 615px) {
     a.scroll.header_bar{
         font-size: 9px;
+    }
+    .click_cube{
+        margin-top: 20px;
     }
 
 }
@@ -1129,6 +1132,23 @@ footer {
     }
 }
 
+@media screen and (max-width: 675px) and (max-height: 380px) {
+    .front_header {
+        font-size: 20px;
+        line-height: 20px;
+        bottom: 15vh;
+        right: 20vw;
+    }
+
+    .front_header2 {
+        font-size: 13px;
+        line-height: 13px;
+        bottom: 12vh;
+        right: 15vw;
+    }
+
+}
+
 .row_conatiner {
     margin: auto;
     max-width: 80%;
@@ -1145,7 +1165,7 @@ footer {
 }
 .click_cube{
     color: white;
-    font-size: 30px;
+    font-size: 20px;
 }
 #map {
     height: 100%;
