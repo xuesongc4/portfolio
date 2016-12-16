@@ -1082,6 +1082,12 @@ footer {
         min-height: 50vh;
         padding-top: 30px;
     }
+    #apps {
+        height: 100vh;
+    }
+    header{
+        height: 100vh;
+    }
 }
 
 .row_conatiner {
