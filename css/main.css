@@ -277,6 +277,36 @@ a:hover, a:focus {
 /* ==========================================================================
    Main styles
    ========================================================================== */
+
+.side1_image, .side2_image, .side3_image, .side4_image{
+    display: none;
+    margin: auto;
+    height: 50vh;
+    width: 90%;
+ }
+.screen_shot{
+    display: inline-block;
+    width: 42%;
+    margin: 15px;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+.side1_desc, .side2_desc, .side3_desc, .side4_desc {
+    padding: 15px;
+    padding-bottom: 50px;
+    margin: auto;
+    background-color: rgba(255,255,255,.6);
+    border: 4px solid black;
+    border-radius: 10px;
+    width: 90%;
+}
+.side1_desc p, .side2_desc p, .side3_desc p, .side4_desc p{
+    font-size: 20px;
+}
+#side_container{
+    display: none;
+}
+
 header {
     background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;
     -webkit-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
@@ -538,7 +568,7 @@ footer {
 .container2 {
     width: 220px;
     height: 220px;
-    perspective: 670px;
+    perspective: 730px;
     display: block;
     margin: auto;
 }
@@ -840,10 +870,7 @@ footer {
     z-index: 5;
 }
 
-.click_cube{
-    color: white;
-    font-size: 30px;
-}
+
 
 @media screen and (max-height: 770px) {
     .front_header {
@@ -1116,7 +1143,10 @@ footer {
     width: 100vw;
     z-index: -10;
 }
-
+.click_cube{
+    color: white;
+    font-size: 30px;
+}
 #map {
     height: 100%;
     width: 100%;
@@ -1150,6 +1180,11 @@ footer {
     background-color: #111;
     color: white;
     transition-duration: .65s;
+}
+
+.close_btn {
+    background-color: #A42327;
+    color: white;
 }
 
 .send_btn:hover {

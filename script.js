@@ -1,24 +1,5 @@
 myVar = null;
 
-
-//-------------------------------------scrolling feature-----------------------
-// var lastScrollTop = 0;
-
-// $( document ).ready(function() {
-//     console.log( "ready!" );
-//     var lastScrollTop = 0;
-//     $(window).scroll(function (event) {
-//         var st = $(this).scrollTop();
-//         if (st > lastScrollTop) {
-//             console.log('down')
-//         } else {
-//             console.log('up')
-//         }
-//         lastScrollTop = st;
-//     });
-// });
-
-
 function add_rotate(delay) {
     if (delay === 'delay') {
         myVar = setTimeout(function () {
@@ -91,19 +72,74 @@ function cube_spin(side) {
 
     }
 }
+
+function return_cube(side){
+    $('#side_container').fadeOut();
+    switch (side){
+        case 1:
+                $('.side1_desc').hide();
+                $('.side1_image').hide();
+            setTimeout(function () {
+                $(".apps_wrap").children().fadeIn();
+            }, 500)
+            break
+        case 2:
+            $('.side2_desc').hide();
+            $('.side2_image').hide();
+            setTimeout(function () {
+                $(".apps_wrap").children().fadeIn();
+            }, 500)
+            break
+        case 3:
+            $('.side3_desc').hide();
+            $('.side3_image').hide();
+            setTimeout(function () {
+                $(".apps_wrap").children().fadeIn();
+            }, 500)
+            break
+        case 4:
+            $('.side4_desc').hide();
+            $('.side4_image').hide();
+            setTimeout(function () {
+                $(".apps_wrap").children().fadeIn();
+            }, 500)
+            break
+    }
+}
+
 function side_expand(side) {
+    $(".apps_wrap").children().fadeOut()
+    $(".side_container > .col-sm-6").children().hide()
+    $(".side_container > .col-sm-4").children().hide()
     switch (side) {
         case 1:
-            $('.side1').fadeToggle();
+            setTimeout(function () {
+                $('.side1_desc').show();
+                $('.side1_image').show();
+                $('#side_container').fadeIn();
+            }, 500)
+
             break;
         case 2:
-            $('.side2').fadeToggle();
+            setTimeout(function () {
+                $('.side2_desc').show();
+                $('.side2_image').show();
+                $('#side_container').fadeIn();
+            }, 500)
             break;
         case 3:
-            $('.side3').fadeToggle();
+            setTimeout(function () {
+                $('.side3_desc').show();
+                $('.side3_image').show();
+                $('#side_container').fadeIn();
+            }, 500)
             break;
         case 4:
-            $('.side4').fadeToggle();
+            setTimeout(function () {
+                $('.side4_desc').show();
+                $('.side4_image').show();
+                $('#side_container').fadeIn();
+            }, 500)
             break;
         case 5:
             $('.side5').fadeToggle();
