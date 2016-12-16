@@ -109,8 +109,15 @@ function return_cube(side){
 
 function side_expand(side) {
     $(".apps_wrap").children().fadeOut()
-    $(".side_container > .col-sm-6").children().hide()
-    $(".side_container > .col-sm-4").children().hide()
+    $('.side1_desc').hide();
+    $('.side1_image').hide();
+    $('.side2_desc').hide();
+    $('.side2_image').hide();
+    $('.side3_desc').hide();
+    $('.side3_image').hide();
+    $('.side4_desc').hide();
+    $('.side4_image').hide();
+
     switch (side) {
         case 1:
             setTimeout(function () {
