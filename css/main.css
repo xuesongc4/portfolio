@@ -279,7 +279,10 @@ a:hover, a:focus {
    ========================================================================== */
 header {
     background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;
-    min-height: 300px;
+    -webkit-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
+    -moz-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
+    -ms-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
+    -o-background: url(../img/stars.png) #ffffff no-repeat center bottom fixed;;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
