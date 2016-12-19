@@ -712,13 +712,12 @@ footer {
 
 .info {
     background-color: rgba(255, 255, 255, .6);
-    margin: 20px;
     padding: 20px;
     padding-top: 0;
-    max-height: 300px;
     border-radius: 20px;
     border: 4px solid black;
     transition-duration: .35s;
+    margin: 25px;
 }
 
 .info:hover {
