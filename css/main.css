@@ -721,17 +721,9 @@ footer {
 }
 
 .info:hover {
-    box-shadow: 0 0 50px white;
+    background-color: rgba(255, 255, 255, .8);
+    box-shadow: 0 0 75px white;
     cursor: pointer;
-}
-
-@media (max-width: 1000px) {
-    .info{
-        display: none;
-    }
-    .click_cube{
-        display: inherit;
-    }
 }
 
 .black_back {

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/modernizr-2.7.1.js"></script>
+
 </head>
 
 <body>
@@ -144,9 +145,12 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#apps" class="scroll">Applications</a></li>
-                <li><a href="#techSkills" class="scroll">Technical Skills</a></li>
-                <li><a href="#connect" class="scroll">Connect With Me</a></li>
+                <li><a href="#apps" class="scroll hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-collapse">Applications</a></li>
+                <li><a href="#techSkills" class="scroll hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-collapse">Technical Skills</a></li>
+                <li><a href="#connect" class="scroll hidden-sm hidden-md hidden-lg" data-toggle="collapse" data-target=".navbar-collapse">Connect With Me</a></li>
+                <li><a href="#apps" class="scroll hidden-xs">Applications</a></li>
+                <li><a href="#techSkills" class="scroll hidden-xs">Technical Skills</a></li>
+                <li><a href="#connect" class="scroll hidden-xs">Connect With Me</a></li>
             </ul>
         </div><!--/.navbar-collapse -->
     </div>
@@ -253,7 +257,7 @@
                 </div>
                 <div class="container">
                     <div class="col-md-3">
-                        <div class="info" onclick="cube_spin(1)">
+                        <div class="info hidden-xs hidden-sm" onclick="cube_spin(1)">
                             <div id="side1_sel" class="side">
                                 <h3>
                                     iBet
@@ -267,7 +271,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="info" onclick="cube_spin(2)">
+                        <div class="info hidden-xs hidden-sm" onclick="cube_spin(2)">
                             <div id="side2_sel" class="side">
                                 <h3>
                                     moduulis.com
@@ -280,7 +284,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="info" onclick="cube_spin(3)">
+                        <div class="info hidden-xs hidden-sm" onclick="cube_spin(3)">
                             <div id="side3_sel" class="side">
                                 <h3>
                                     tic-tac-remix
@@ -294,7 +298,7 @@
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="info" onclick="cube_spin(4)">
+                        <div class="info hidden-xs hidden-sm" onclick="cube_spin(4)">
                             <div id="side4_sel" class="side">
                                 <h3>
                                     Student Grade Table (CMS)
