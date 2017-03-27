@@ -73,12 +73,12 @@ function cube_spin(side) {
     }
 }
 
-function return_cube(side){
+function return_cube(side) {
     $('#side_container').fadeOut();
-    switch (side){
+    switch (side) {
         case 1:
-                $('.side1_desc').hide();
-                $('.side1_image').hide();
+            $('.side1_desc').hide();
+            $('.side1_image').hide();
             setTimeout(function () {
                 $(".apps_wrap").children().fadeIn();
             }, 500)
@@ -193,3 +193,5 @@ var Item = function (imgSrc, height, width, sensitivity) {
     };
 
 };
+
+//----------------------scrolling--------------------------------------------

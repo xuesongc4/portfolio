@@ -297,7 +297,7 @@ body {
 
 /* Let's get this party started */
 ::-webkit-scrollbar {
-    width: 12px;
+    display:none;
 }
 
 /* Track */
@@ -1349,3 +1349,4 @@ footer {
         transform: rotateY(-34300deg);
     }
 }
+
